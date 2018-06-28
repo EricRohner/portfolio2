@@ -65,3 +65,71 @@ export default class Canopy extends React.Component {
         );
     }
 }
+
+// import React, {Component} from 'react';
+//
+// class ImgLayer extends React.Component {
+//     render() {
+//         const mouse = this.props.mouse;
+//         return (
+//             <div>
+//
+//                 <img src="/Canopy/Back.png"
+//                      style={{position: 'absolute', left: 0, top: 0, height: `${mouse.h1}vh`, width: `${mouse.w1}vw`}}/>
+//                 <img src="/Canopy/Layer1.png"
+//                      style={{position: 'absolute', left: -28, top: -28, height: '{$h2}vh', width: '{$w2}vw'}}/>
+//                 <img src="/Canopy//Layer2.png"
+//                      style={{position: 'absolute', left: -28, top: -28, height: '110vh', width: '110vw'}}/>
+//                 <img src="/Canopy//Layer3.png"
+//                      style={{position: 'absolute', left: -28, top: -14, height: '110vh', width: '110vw'}}/>
+//                 <img src="/Canopy//Layer4.png"
+//                      style={{position: 'absolute', left: -40, top: -28, height: '110vh', width: '110vw'}}/>
+//                 <img src="/Canopy//Layer5.png"
+//                      style={{position: 'absolute', left: mouse.x5, top: mouse.y5, height: '110vh', width: '110vw'}}/>
+//             </div>
+//         );
+//     }
+// }
+//
+// class Mouse extends React.Component {
+//     constructor(props) {
+//         super(props);
+//         this.handleMouseMove = this.handleMouseMove.bind(this);
+//         this.state = {x: 0, y: 0};
+//     }
+//
+//     handleMouseMove(event) {
+//         this.setState({
+//             w1: Math.sin(event.clientX / window.innerWidth) * 8 - 28,
+//             h1: Math.sin(event.clientY / window.innerHeight) * 8 - 28,
+//             w2: Math.sin(event.clientX / window.innerWidth + 0.62) * 8 - 28,
+//             h2: Math.sin(event.clientY / window.innerHeight + 0.62) * 8 - 28,
+//             w3: Math.sin(event.clientX / window.innerWidth + 1.25) * 8 - 28,
+//             h3: Math.sin(event.clientY / window.innerHeight + 1.25) * 8 - 14,
+//             w4: Math.sin(event.clientX / window.innerWidth + 1.88) * 8 - 28,
+//             h4: Math.sin(event.clientY / window.innerHeight + 1.88) * 8 - 28,
+//             w5: Math.sin(event.clientX / window.innerWidth + 4) * 8 -40,
+//             h5: Math.sin(event.clientY / window.innerHeight + 4) * 8 - 28
+//         });
+//     }
+//
+//     render() {
+//         return (
+//             <div style={{height: '100vh', width: '100vw'}} onMouseMove={this.handleMouseMove}>
+//                 {this.props.render(this.state)}
+//             </div>
+//         );
+//     }
+// }
+//
+// export default class Canopy extends React.Component {
+//     render() {
+//         return (
+//             <div>
+//                 <Mouse render={mouse => (
+//                     <ImgLayer mouse={mouse}/>
+//                 )}/>
+//             </div>
+//         );
+//     }
+// }

@@ -18,7 +18,7 @@ export default class Burnt extends Component {
             x3: Math.sin(event.clientX / window.innerWidth + 1.57) * 32 - 32,
             y3: Math.sin(event.clientY / window.innerHeight + 1.57) * 32 - 38,
             x4: Math.sin(event.clientX / window.innerWidth + 2.35) * 64 - 50,
-            y4: Math.sin(event.clientY / window.innerHeight + 2.35) * 64 - 84
+            y4: Math.sin(event.clientY / window.innerHeight + 2.35) * 64 - 64
         });
     }
 
@@ -66,7 +66,6 @@ export default class Burnt extends Component {
                          height: '110vh',
                          width: '110vw'
                      }}/>
-                }}/>
             </div>
         );
     }

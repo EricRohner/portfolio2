@@ -2,9 +2,9 @@
 
 # dependencies
 /node_modules
-
+/.idea
 # testing
-/coverage
+/coveragegit a
 
 # production
 /build

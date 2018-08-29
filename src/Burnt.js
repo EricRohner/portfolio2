@@ -1,11 +1,12 @@
 import React, {Component} from 'react';
 import Header from './Header'
+import Me from './Me.jpg'
 
 export default class Burnt extends Component {
     constructor(props) {
         super(props);
         this.handleMouseMove = this.handleMouseMove.bind(this);
-        this.state = {x1: -28, y1: -28, x2: -28, y2: -28, x3: -32, y3: -38, x4: -50, y4: -84};
+        this.state = {x1: -28, y1: -28, x2: -28, y2: -28, x3: -32, y3: -38, x4: -50, y4: -84, hide: true};
     }
 
     handleMouseMove(event) {
@@ -22,7 +23,10 @@ export default class Burnt extends Component {
         });
     }
 
-    render() {
+  changeHideFalse = () => {this.setState({ hide: false })}
+  changeHideTrue = () => {this.setState({ hide: true })}
+
+  render() {
         return (
             <div style={{height: '100vh', width: '100vw'}} onMouseMove={this.handleMouseMove}>
                 <Header/>
@@ -66,7 +70,15 @@ export default class Burnt extends Component {
                          height: '110vh',
                          width: '110vw'
                      }}/>
+              <p className= "AbHover" onMouseEnter={this.changeHideFalse}
+                 onMouseLeave={this.changeHideTrue}>About me</p>
+              <main className="AbMain" hidden = {this.state.hide}>
+                <img className="Me" src={Me} />
+                <p className="AbInfo">(360) 791-5099</p>
+                <p className="AbInfo">EricRohner22@gmail.com</p>
+              </main>
             </div>
+
         );
     }
 }

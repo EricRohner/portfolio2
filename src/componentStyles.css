@@ -10,10 +10,6 @@ a {
   text-decoration: none;
 }
 
-.Whh1 {
-  background-image: url("./Sashimi.jpg");
-}
-
 .WhTsunamiImg {
   height: 60px;
   margin-left: 10px;
@@ -29,12 +25,13 @@ a {
 .SkMain {
   margin: 5vh 0vw 0vw 10vw;
   width: 80vw;
-  height: 100px;
+  height: 120px;
   border: 2px solid black;
   background-color: white;
 }
 
 .Whh1 {
+  background-image: url("./Sashimi.jpg");
   height: 170px;
   background-repeat: no-repeat;
 }
@@ -49,20 +46,20 @@ a {
   display: flex;
 }
 
-.WhHover {
-  width: 80px;
+.WhHover, .AbHover {
+  width: 100px;
   margin: 10px;
 }
 
 .CanHover {
   color: lightskyblue;
-  width: 80px;
+  width: 150px;
   margin: 10px;
 }
 
 .SkImg {
   height: 80px;
-  margin: 15px;
+  margin: 20px;
 }
 
 .SAMP{
@@ -82,4 +79,26 @@ a {
 .Hovers {
   display: flex;
   flex-direction: column;
+}
+
+.Me {
+  width: 350px;
+
+}
+
+.AbMain {
+  position: absolute;
+  top: 10vh;
+  left: 35vw;
+  width: 350px;
+  border: 2px solid black;
+  background-color: white;
+}
+
+.AbHover {
+  color: white;
+}
+
+.AbInfo {
+  margin: 10px;
 }
